@@ -8,10 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+// Loading Style
+typedef enum _LoadingStyle {
+    kLoadingStyleLine = 0,
+    kLoadingStyleCircle,
+} LoadingStyle;
+
 @interface AsyncImageView : UIImageView {
  @private
     UIView *progressBkView;
     UIView *progressView;
+    
+    LoadingStyle loadingStyle;
 }
 
 - (void)setImageURL:(NSURL *)url placeholder:(UIImage *)placeholderImage;
