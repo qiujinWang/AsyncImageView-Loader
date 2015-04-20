@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class ProgressCircleView;
+
 // Loading Style
 typedef enum _LoadingStyle {
     kLoadingStyleLine = 0,
@@ -19,8 +21,13 @@ typedef enum _LoadingStyle {
     UIView *progressBkView;
     UIView *progressView;
     
+    ProgressCircleView *circleView;
+    
     LoadingStyle loadingStyle;
 }
 
 - (void)setImageURL:(NSURL *)url placeholder:(UIImage *)placeholderImage;
+
+- (void)setImageURL:(NSURL *)url placeholder:(UIImage *)placeholderImage loadingStyle:(LoadingStyle)style;
+
 @end

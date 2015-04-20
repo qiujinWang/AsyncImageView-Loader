@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CCC6E3971AE4C56A0083D62F /* ProgressCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC6E3961AE4C56A0083D62F /* ProgressCircleView.m */; };
 		DCAF5DD91AE3E3510091DA1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAF5DD81AE3E3510091DA1B /* main.m */; };
 		DCAF5DDC1AE3E3510091DA1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAF5DDB1AE3E3510091DA1B /* AppDelegate.m */; };
 		DCAF5DDF1AE3E3510091DA1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAF5DDE1AE3E3510091DA1B /* ViewController.m */; };
@@ -31,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CCC6E3951AE4C56A0083D62F /* ProgressCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressCircleView.h; sourceTree = "<group>"; };
+		CCC6E3961AE4C56A0083D62F /* ProgressCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressCircleView.m; sourceTree = "<group>"; };
 		DCAF5DD31AE3E3510091DA1B /* AsyncImageViewLoader+Circle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AsyncImageViewLoader+Circle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAF5DD71AE3E3510091DA1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCAF5DD81AE3E3510091DA1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -71,6 +74,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CCC6E3941AE4C54B0083D62F /* ProgressCircleView */ = {
+			isa = PBXGroup;
+			children = (
+				CCC6E3951AE4C56A0083D62F /* ProgressCircleView.h */,
+				CCC6E3961AE4C56A0083D62F /* ProgressCircleView.m */,
+			);
+			name = ProgressCircleView;
+			sourceTree = "<group>";
+		};
 		DCAF5DCA1AE3E3510091DA1B = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +167,7 @@
 		DCAF5E051AE3EE840091DA1B /* AsyncImageView */ = {
 			isa = PBXGroup;
 			children = (
+				CCC6E3941AE4C54B0083D62F /* ProgressCircleView */,
 				DCAF5E061AE3EE9B0091DA1B /* AsyncImageView.h */,
 				DCAF5E071AE3EE9B0091DA1B /* AsyncImageView.m */,
 			);
@@ -262,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCC6E3971AE4C56A0083D62F /* ProgressCircleView.m in Sources */,
 				DCAF5DDF1AE3E3510091DA1B /* ViewController.m in Sources */,
 				DCAF5E081AE3EE9B0091DA1B /* AsyncImageView.m in Sources */,
 				DCAF5DDC1AE3E3510091DA1B /* AppDelegate.m in Sources */,
@@ -458,6 +472,7 @@
 				DCAF5DF81AE3E3510091DA1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DCAF5DF91AE3E3510091DA1B /* Build configuration list for PBXNativeTarget "AsyncImageViewLoader+CircleTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +481,7 @@
 				DCAF5DFB1AE3E3510091DA1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

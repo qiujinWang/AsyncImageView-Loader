@@ -25,7 +25,7 @@
     imgView = [[AsyncImageView alloc] initWithFrame:CGRectMake(10, 100, 300, 300)];
     [self.view addSubview:imgView];
     
-    [imgView setImageURL:[NSURL URLWithString:url] placeholder:[UIImage imageNamed:@"1.jpg"]];
+    [imgView setImageURL:[NSURL URLWithString:url] placeholder:[UIImage imageNamed:@"1.jpg"] loadingStyle:kLoadingStyleLine];
 }
 
 - (void)didReceiveMemoryWarning {
