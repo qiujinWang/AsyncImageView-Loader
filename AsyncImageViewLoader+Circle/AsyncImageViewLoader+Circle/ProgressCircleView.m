@@ -19,9 +19,17 @@
     
     CGContextSetLineWidth(context, 5.0);
     CGContextSetLineCap(context, kCGLineCapRound);
-    CGContextSetStrokeColorWithColor(context, [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.85].CGColor);
+    CGContextSetStrokeColorWithColor(context, [UIColor colorWithRed:0 green:0 blue:0 alpha:0.85].CGColor);
     CGFloat startAngle = 0;
-    CGFloat step = M_PI * 2  * self.progress;
+    CGFloat step = M_PI * 2;
+    CGContextAddArc(context, self.bounds.size.width/2, self.bounds.size.height/2, 20, startAngle, startAngle+step, 0);
+    CGContextStrokePath(context);
+    
+    CGContextSetLineWidth(context, 5.0);
+    CGContextSetLineCap(context, kCGLineCapRound);
+    CGContextSetStrokeColorWithColor(context, [UIColor whiteColor].CGColor);
+    startAngle = 0;
+    step = M_PI * 2  * self.progress;
     CGContextAddArc(context, self.bounds.size.width/2, self.bounds.size.height/2, 20, startAngle, startAngle+step, 0);
     CGContextStrokePath(context);
 }
